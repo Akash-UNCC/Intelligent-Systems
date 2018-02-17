@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wooden1"
+    tools:context="com.example.sanket.smp1.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        app:srcCompat="@drawable/tictacto"
+        android:layout_weight="0.12" />
+
+    <Button
+        android:id="@+id/singlePlatyer"
+        android:background="@drawable/mybutton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Single Player" />
+
+    <Button
+        android:layout_marginTop="60dp"
+        android:id="@+id/Multiplayer"
+        android:background="@drawable/mybutton"
+        android:layout_width="130dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="MultiPlayer" />
+
+    <Button
+        android:id="@+id/exitGame"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Exit" />
+</LinearLayout>

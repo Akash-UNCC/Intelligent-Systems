@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/download5"
+    android:id="@+id/linearl"
+    tools:context="com.example.sanket.smp1.FirstActivity">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/Single_Player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="90dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="SINGLE PLAYER" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/Multi_Player"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:text="MULTI PLAYER" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/boardSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Board size"
+        android:inputType="number" />
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/levelDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Easy" />
+
+            <RadioButton
+                android:id="@+id/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/difficult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Difficult" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioGroup
+            android:id="@+id/move"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/firstMove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="First Move" />
+
+            <RadioButton
+                android:id="@+id/secondMove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Second Move" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="140dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/mybutton"
+            android:text="BACK" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/mybutton"
+            android:text="START" />
+    </LinearLayout>
+
+</LinearLayout>
