@@ -33,11 +33,6 @@ public class RandomRestart {
 			rows[i] = rows[j];
 			rows[j] = rowToSwap;
 		}
-
-		 /* for (int i = 0, n = rows.length; i < n; i++) {
-              System.out.print(rows[i]);
-              }*/
-		  //System.out.println("--");
 		  restarts++;
 	}
 
@@ -125,11 +120,6 @@ public class RandomRestart {
 		}
 	}
 
- /*	void print(int[] array) {
-		for (int r = 0; r < array.length; r++) {
-			System.out.println(array[r]);
-		}
-	}*/
 	
 	static void print(PrintStream stream) {
             for (int r = 0; r < rows.length; r++) {
