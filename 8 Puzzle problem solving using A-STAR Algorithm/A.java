@@ -86,7 +86,6 @@ public class A {
 		Node root = new Node(ini);
 		// queue.offer(root);
 		// Printing the final state(Goal state)
-		System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 		System.out.println("Final state");
 		// printing Final 2D array
 		for (int i = 0; i < 3; i++) {
@@ -96,7 +95,6 @@ public class A {
 			System.out.println();
 		}
 
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 		visited.add(root);
 		GenerateStates(root, fin);
 		expanded++; // Counts the No. of expanded nodes
@@ -114,19 +112,13 @@ public class A {
 	// Generating States method generates valid Successor states
 	public static void GenerateStates(Node node, int[][] fin) {
 
-		// .clear();
 		count++;
-		//System.out.println("level::::::::::::::::::::::::: " + count);
 		pair.clear();
 		for (int i1 = 0; i1 < 3; i1++) {
 			for (int j1 = 0; j1 < 3; j1++) {
 
 				if (node.childnode[i1][j1] == 0) {
 					validState(i1, j1);
-
-					// System.out.println("valid states::::::::::::::::"+pair);
-
-					// System.out.println(i1+" "+j1);
 
 					int x = 1;
 
@@ -232,8 +224,6 @@ public class A {
 			pair.add(i);
 			pair.add(j - 1);
 		}
-
-		//System.out.println("pair list ::::::::::::::::::::::::::" + pair);
 	}
 
 	// This Method calculates the Heuristic function values for corresponding
